@@ -8,12 +8,14 @@ import android.view.MenuItem;
 
 public class QuizActivity extends Activity {
 
+    private Button mTrueButton;
+    private Button mFalseButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
