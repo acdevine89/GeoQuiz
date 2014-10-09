@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 
 public class QuizActivity extends Activity {
@@ -15,6 +16,9 @@ public class QuizActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        mTrueButton = (Button)findViewById(R.id.true_button);
+        mFalseButton = (Button)findViewById(R.id.false_button);
     }
 
     @Override
